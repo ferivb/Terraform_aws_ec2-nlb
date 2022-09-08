@@ -97,7 +97,7 @@ resource "aws_instance" "softserve_node" {
   key_name               = aws_key_pair.softserve_key.id
   vpc_security_group_ids = [aws_security_group.softserve_security_group.id]
   subnet_id              = element(aws_subnet.subnet_public.*.id, count.index)
-  # user_data              = file("nginx-installer.sh")  --- two scenarios in one
+  # user_data              = file("nginx-installer.sh")  # uncomment this line for Ready-to-serve
 
   root_block_device {
     volume_size = 10 # (HD in Gbs) - Default size is 8, free tier ends at 16
