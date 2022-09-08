@@ -20,43 +20,43 @@ You can either deploy the AWS instances and configure the web server separately,
 
 clone/download this repository
 
-    ```git clone git@github.com:ferivb/Terraform_aws_ec2-nlb.git```
+    git clone git@github.com:ferivb/Terraform_aws_ec2-nlb.git
 
 Open main.tf with your preferred text editor and uncomment line 100
 
-    ```code main.tf```
+    code main.tf
 
 Initialize Terraform
 
-    ```terraform init```
+    terraform init
 
 Apply the terraform configuration
 
-    ```terraform apply -auto-approve```
+    terraform apply -auto-approve
 
 ### Stand-alone installation
 
 clone/download this repository
 
-    ```git clone git@github.com:ferivb/Terraform_aws_ec2-nlb.git```
+    git clone git@github.com:ferivb/Terraform_aws_ec2-nlb.git
 
 Initialize Terraform
 
-    ```terraform init```
+    terraform init
 
 Apply the terraform configuration
 
-    ```terraform apply -auto-approve```
+    terraform apply -auto-approve
 
 Secure copy the nginx-installer.sh script into each of the EC2 instances
 
-    ```scp nginx-installer.sh ubuntu@[instance ip]:~```
+    scp nginx-installer.sh ubuntu@[instance ip]:~
 
 Ssh into the instance and execute the script
 
-    ```ssh [instance ip]
+    ssh [instance ip]
 
-    ./nginx-installer.sh```
+    ./nginx-installer.sh
 
 ## Running the tests
 
