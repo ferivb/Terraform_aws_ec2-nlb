@@ -11,8 +11,8 @@ Requirements for the software and other tools to build, test and push
 - Ubuntu 20.04 or any compatible os.
 - An AWS account with full EC2/VPC permissions.
 - A Terraform version compatible with Terraform v1.2.8.
-- VScode
-- Remote - SSH (vscode ext)
+- VScode - optional
+- Remote - SSH (vscode ext) - optional
 
 ## Installing
 
@@ -60,7 +60,7 @@ Ssh into the instance and execute the script
 
     ./nginx-installer.sh
 
-## Resources to be instantiated
+## AWS Resources to be instantiated
 
 - aws_vpc:
   Isolates a private segment in the cloud
